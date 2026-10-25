@@ -1,0 +1,36 @@
+# AgriSense AI - Python dependencies
+# Recommended: Python 3.10 - 3.12 (TensorFlow does not support the newest Python versions straight away)
+# Install with: pip install -r requirements.txt
+
+# --- Data handling ---
+pandas>=2.0
+numpy>=1.26
+openpyxl>=3.1          # read/write Excel files (price data)
+
+# --- Machine learning (yield prediction) ---
+scikit-learn>=1.3
+xgboost>=2.0
+joblib>=1.3            # save and load trained models
+
+# --- Deep learning (disease detection) ---
+tensorflow>=2.15       # includes Keras; MobileNetV2 transfer learning
+pillow>=10.0           # image loading and resizing
+
+# --- Time series (price forecasting) ---
+statsmodels>=0.14      # ARIMA / SARIMA, stationarity tests, ACF/PACF
+# prophet>=1.1         # optional: uncomment only if you use Prophet (can be hard to install on Windows)
+
+# --- NLP (chatbot) ---
+nltk>=3.8              # also run: python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
+# sentence-transformers>=2.2   # optional: only if you use sentence embeddings (large download)
+
+# --- Visualisation ---
+matplotlib>=3.7
+seaborn>=0.13
+
+# --- Interface ---
+streamlit>=1.30
+
+# --- Notebooks ---
+jupyter>=1.0
+ipykernel>=6.25
